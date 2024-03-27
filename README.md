@@ -8,6 +8,7 @@ terraform apply --auto-approve
 wait
 
 aws eks update-kubeconfig --region us-east-2 --name jenkins-eks-cluster
+
 helm install auto-jenkins oci://registry-1.docker.io/bitnamicharts/jenkins
 
 1. Get the Jenkins URL by running:
