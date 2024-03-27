@@ -17,9 +17,7 @@ helm install -f values.yaml auto-jenkins oci://registry-1.docker.io/bitnamichart
 
 ** Watch the status using: kubectl get svc --namespace default -w auto-jenkins **
 
-  export SERVICE_IP=$(kubectl get svc --namespace default auto-jenkins --template "{{ range (index .status.loadBalancer.ingress 0) }}{{ . }}{{ end }}")
- 
-  echo "Jenkins URL: http://$SERVICE_IP/"
+  export SERVICE_IP=$(kubectl get svc --namespace default auto-jenkins --template "{{ range (index .status.loadBalancer.ingress 0) }}{{ . }}{{ end }}") && echo "Jenkins URL: http://$SERVICE_IP/"
 
 2. Login with the following credentials
 
