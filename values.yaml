@@ -2,7 +2,7 @@ jenkinsUser: admin
 jenkinsPassword: "hireme123!"
 
 plugins:
-- kubernetes:1.31.3
+- kubernetes:4203.v1dd44f5b_1cf9
 - workflow-aggregator:596.v8c21c963d92d
 - git:5.2.1
 - configuration-as-code:1775.v810dc950b_514
