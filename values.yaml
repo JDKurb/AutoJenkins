@@ -1,28 +1,8 @@
-configAsCode:
-  ## @param configAsCode.enabled Enable configuration as code.
-  ##
-  enabled: true
-  ## @param configAsCode.extraConfigFiles List of additional configuration-as-code files to be mounted
-  ## E.g.:
-  welcome-message.yaml: |-
-      jenkins:
-        systemMessage: Automatic Jenkins CI/CD pipeline configured as code. Neat, huh?
+jenkinsUser: admin
+jenkinsPassword: "hireme123!"
 
-  jobs:
-  - script: |
-      pipelineJob('Build Microservice') {
-        definition {
-          cpsScm {
-            scriptPath 'Jenkinsfile'
-            scm {
-              git {
-                remote {
-                  url('file:///git-repo')
-                }
-                branch('master')
-              }
-            }
-          }
-        }
-      }
-  
+plugins:
+- kubernetes:1.31.3
+- workflow-aggregator:596.v8c21c963d92d
+- git:5.2.1
+- configuration-as-code:1775.v810dc950b_514
