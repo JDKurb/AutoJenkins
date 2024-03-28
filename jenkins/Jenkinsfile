@@ -14,12 +14,12 @@ pipeline {
                 nvm install 20
                 cd ./weather-webpage/src/
                 npm install
-                '''
+                npm run'''
             }
         }
         stage('Build') {
             steps {
-                sh 'cd ./weather-webpage/src/ && npm build'
+                echo 'step'
             }
         }
         stage('Deploy') {
