@@ -14,7 +14,7 @@ pipeline {
                 nvm install 20
                 cd ./weather-webpage/src/
                 npm install
-                npm run'''
+                npm start'''
             }
         }
         stage('Build') {
