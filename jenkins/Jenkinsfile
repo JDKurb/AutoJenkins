@@ -13,12 +13,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                //todo
+                echo "buildstep"
             }
         }
         stage('Deploy') {
             steps{
-                //todo
+                echo "deploystep"
             }
         }
     }
