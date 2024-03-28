@@ -13,12 +13,13 @@ pipeline {
                 [ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh"
                 nvm install 20
                 cd ./weather-webpage/src/
-                npm install'''
+                npm install
+                '''
             }
         }
         stage('Build') {
             steps {
-                echo "buildstep"
+                sh 'cd ./weather-webpage/src/ && npm build'
             }
         }
         stage('Deploy') {
