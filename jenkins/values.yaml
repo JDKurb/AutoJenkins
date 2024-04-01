@@ -1,0 +1,20 @@
+image:
+  registry: 905418215051.dkr.ecr.us-east-2.amazonaws.com
+  repository: custom-jenkins
+  tag: latest
+  digest: ""
+
+jenkinsUser: admin
+jenkinsPassword: "hireme123!"
+
+plugins:
+- amazon-ecr:1.114.vfd22430621f5
+- docker-workflow:572.v950f58993843
+- kubernetes:4203.v1dd44f5b_1cf9
+- workflow-aggregator:596.v8c21c963d92d
+- git:5.2.1
+- github:1.38.0
+- configuration-as-code:1775.v810dc950b_514
+- nodejs:1.6.1
+- gradle:2.10
+- pipeline-aws:1.45
