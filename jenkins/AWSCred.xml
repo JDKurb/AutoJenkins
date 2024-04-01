@@ -1,0 +1,12 @@
+<com.cloudbees.jenkins.plugins.awscredentials.AWSCredentialsImpl plugin="aws-credentials@231.v08a_59f17d742">
+  <scope>GLOBAL</scope>
+  <id>AWS</id>
+  <description></description>
+  <accessKey>AKIA5FTZBR2F4BG23YMJ</accessKey>
+  <secretKey>
+    <secret-redacted/>
+  </secretKey>
+  <iamRoleArn></iamRoleArn>
+  <iamExternalId></iamExternalId>
+  <iamMfaSerialNumber></iamMfaSerialNumber>
+</com.cloudbees.jenkins.plugins.awscredentials.AWSCredentialsImpl>
