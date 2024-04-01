@@ -15,6 +15,5 @@ plugins:
 - git:5.2.1
 - github:1.38.0
 - configuration-as-code:1775.v810dc950b_514
-- nodejs:1.6.1
 - gradle:2.10
 - pipeline-aws:1.45
