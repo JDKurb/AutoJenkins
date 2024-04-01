@@ -7,6 +7,12 @@ image:
 jenkinsUser: admin
 jenkinsPassword: "hireme123!"
 
+#configAsCode:
+#  enabled: true
+
+#agent:
+#  enabled: true
+
 plugins:
 - amazon-ecr:1.114.vfd22430621f5
 - docker-workflow:572.v950f58993843
